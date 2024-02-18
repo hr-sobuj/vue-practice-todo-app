@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Todo from "../pages/Todo.vue";
 import DynamicTabs from "../pages/DynamicTabs.vue";
+import DependencyInjection from "../pages/DependencyInjection.vue";
 import App from "../App.vue";
 
 const routes = [
@@ -16,6 +17,11 @@ const routes = [
         path: "/dynamic-components",
         component: DynamicTabs,
         name: "tabs",
+    },
+    {
+        path: "/dependency-injection",
+        component: DependencyInjection,
+        name: "dependency",
     },
 ];
 
