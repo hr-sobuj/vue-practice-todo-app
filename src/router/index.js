@@ -1,28 +1,28 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Todo from "../pages/Todo.vue";
-import DynamicTabs from "../pages/DynamicTabs.vue";
-import DependencyInjection from "../pages/DependencyInjection.vue";
-import App from "../App.vue";
+// import DynamicTabs from "../pages/DynamicTabs.vue";
+import TodoPinia from "../pages/pinia/TodoPinia.vue";
+// import DependencyInjection from "../pages/DependencyInjection.vue";
+
 
 const routes = [
+    // {
+    //     path: "/",
+    // },
     {
         path: "/",
-    },
-    {
-        path: "/todo",
-        component: Todo,
+        component: TodoPinia,
         name: "todo",
     },
-    {
-        path: "/dynamic-components",
-        component: DynamicTabs,
-        name: "tabs",
-    },
-    {
-        path: "/dependency-injection",
-        component: DependencyInjection,
-        name: "dependency",
-    },
+    // {
+    //     path: "/dynamic-components",
+    //     component: DynamicTabs,
+    //     name: "tabs",
+    // },
+    // {
+    //     path: "/dependency-injection",
+    //     component: DependencyInjection,
+    //     name: "dependency",
+    // },
 ];
 
 const router = createRouter({
